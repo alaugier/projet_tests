@@ -1,0 +1,7 @@
+.env
+data
+env
+*.ipynb
+archives
+.pytest_cache
+__pycache__
