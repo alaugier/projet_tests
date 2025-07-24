@@ -16,6 +16,7 @@ archives/
 # 🧪 Pytest
 .pytest_cache/
 __pycache__/
+*.pyc
 
 # 💻 Notebooks Jupyter
 *.ipynb
