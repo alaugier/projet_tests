@@ -16,7 +16,7 @@ MONGO_DB_APPNAME = os.getenv("MONGO_DB_APPNAME")
 PASSWORD_MONGODB = os.getenv("PASSWORD_MONGODB")
 USER_MONGODB = os.getenv("USER_MONGODB")
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), "templates"))
 
 BASE_DIR = os.path.dirname(__file__)  # le dossier de app.py
 
