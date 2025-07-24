@@ -1,11 +1,27 @@
+# 🔐 Environnement et secrets
 .env
-data
-env
-*.ipynb
-archives
-.pytest_cache
-__pycache__*:Zone.Identifier
-*:Zone.Identifier
-env_tests
-app_blank
+.env.*
+*.env
+
+# 📦 Environnements virtuels
+env/
+env_tests/
+.venv/
+
+# 📁 Données et résultats
+data/
 *.csv
+archives/
+
+# 🧪 Pytest
+.pytest_cache/
+__pycache__/
+
+# 💻 Notebooks Jupyter
+*.ipynb
+
+# 🛠️ Fichiers spécifiques à Windows (Zone.Identifier)
+*:Zone.Identifier
+
+# 🚧 Dossiers de test ou brouillons
+app_blank/
