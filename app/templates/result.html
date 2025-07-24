@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat de la Prédiction</title>
+</head>
+<body>
+    <h1>Résultat</h1>
+  <h2>Phrase : "{{ phrase }}"</h2>
+  <p>Prédiction : {{ "Positif" if prediction == 1 else "Négatif" }}</p>
+  <p>Taux de confiance : {{ best_proba_human_readable }} %</p>
+  
+  <form method="post" action="/save">
+
+    <input type="hidden" name="phrase" value="{{ phrase }}">
+    <input type="hidden" name="prediction" value="{{ prediction }}">
+    <input type="hidden" name="proba" value="{{ proba }}">
+    <p>La prédiction était-elle correcte ?</p>
+    <button type="submit" name="correct" value="true">Oui</button>
+    <button type="submit" name="correct" value="false">Non</button>
+  </form>
+    <br>
+    <a href="{{ url_for('index') }}">Annuler et retour à l'accueil</a>
+</body>
+</html>
