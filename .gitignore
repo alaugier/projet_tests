@@ -4,4 +4,4 @@ env
 *.ipynb
 archives
 .pytest_cache
-__pycache__
+__pycache__*:Zone.Identifier
