@@ -6,3 +6,6 @@ archives
 .pytest_cache
 __pycache__*:Zone.Identifier
 *:Zone.Identifier
+env_tests
+app_blank
+*.csv
