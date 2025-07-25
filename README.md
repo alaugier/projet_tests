@@ -55,7 +55,6 @@ projet_tests/
 ├── .github/workflows/main.yml
 ├── .env.example
 ├── requirements.txt
-├── render.yaml
 └── README.md
 ```
 
